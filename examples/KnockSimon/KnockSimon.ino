@@ -1,29 +1,34 @@
 /*
  * KnockSimon.ino - Knock detection & recognition library for Arduino
  * Copyright (c) 2014 Anderson de Oliveira Antunes. All right reserved.
- * 
+ *
  * This file is part of Knock.
- * 
+ *
  * Knock is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * Knock is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with Knock; if not, see <http://www.gnu.org/licenses/>.
- * 
+ *
  */
- 
+
 #include "Knock.h"
 
 #define RED_LED    13
 #define GREEN_LED  4
 #define SPEAKER    5
+
+
+void fGodMode();
+void fPlayHighScore();
+void fNextLevel();
 
 class SecretKnock : public KnockDetector {
 public:
